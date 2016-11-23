@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'application#hello'
+  resources :microposts
+  resources :microposts #microposts路由
+  resources :users #user路由
+  root 'users#index'
 end
